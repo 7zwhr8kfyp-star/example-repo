@@ -6,10 +6,10 @@ grid = [["-", "#", "-", "-", "#"],
 ["#", "-", "-", "-", "-"],
 ["-", "-", "-", "#", "-"]]
 
-     # Function to count '#'s                       
+# Function to count '#'s                       
 def grid_count(grid,row,col): 
     rows = len(grid) # 5 lists so 5 rows
-    cols = len(grid[0]) # Columns is length or 1 row, so 5
+    cols = len(grid[0]) # Columns is length for 1 row, so 5
     count = 0
     for r in range(row - 1, row + 2): # Checks 1 row above, current row and 1 below.
         for c in range(col - 1, col + 2): # Checks col to left and right, therefore all surrounding cells
